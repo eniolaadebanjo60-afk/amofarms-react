@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import '../styles/careers.css'
-import jobs from '../data/Jobs'
+import jobs from '../data/jobs'
 
 const whyPoints = [
   {
