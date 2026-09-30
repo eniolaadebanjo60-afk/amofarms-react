@@ -259,7 +259,7 @@ export default function Careers() {
             <div className="apply-banner-text">
               <div
                 className="section-tag"
-                style={{ color: 'rgba(255,255,255,0.7)', borderColor: 'rgba(255,255,255,0.4)' }}
+                style={{ color: '#fff', borderColor: '#fff' }}
               >
                 Get In Touch
               </div>
