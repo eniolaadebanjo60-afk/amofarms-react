@@ -8,14 +8,13 @@ import About from './pages/About'
 import Products from './pages/Products'
 import RD from './pages/RD'
 import Blog from './pages/Blog'
-import Blogpost from './pages/Blogpost'
 import ScrollToTop from './components/ScrollToTop'
 import Careers from './pages/Careers'
 import Contact from './pages/Contact'
+import BlogPost from './pages/BlogPost'
 
 export default function App() {
   useFadeIn()
-
   return (
     <>
       <Navbar />
@@ -26,7 +25,7 @@ export default function App() {
         <Route path="/products" element={<Products />} />
         <Route path="/rd" element={<RD />} />
         <Route path="/blog" element={<Blog />} />
-        <Route path="/blog/:id" element={<Blogpost />} />
+        <Route path="/blog/:id" element={<BlogPost />} />
         <Route path="/careers" element={<Careers />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>

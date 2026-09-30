@@ -36,7 +36,7 @@ function renderBlock(block, index) {
   }
 }
 
-export default function Blogpost() {
+export default function BlogPost() {
   const { id } = useParams()
   const post = posts.find((item) => item.id === id)
 
