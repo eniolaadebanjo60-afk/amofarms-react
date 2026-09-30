@@ -143,31 +143,6 @@ export default function Careers() {
         </div>
       </section>
 
-      <section className="talent-section fade-in">
-        <div className="section-inner">
-          <div className="section-header" style={{ textAlign: 'center' }}>
-            <div className="section-tag">Talent Profile</div>
-            <h2 className="section-title" style={{ color: 'var(--white)' }}>
-              What We Look For
-            </h2>
-            <p
-              className="section-sub"
-              style={{ color: '#000', fontWeight: 500, margin: '0 auto' }}
-            >
-              We seek individuals who bring more than skills — people who bring
-              character, drive, and purpose.
-            </p>
-          </div>
-          <div className="talent-tags">
-            {talentTags.map((tag) => (
-              <div className="talent-tag" key={tag.label}>
-                <i className={`fa-solid ${tag.icon}`}></i> {tag.label}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <section className="jobs-section fade-in" id="opportunities">
         <div className="section-inner">
           <div className="section-header">
@@ -268,21 +243,21 @@ export default function Careers() {
               </h2>
               <p
                 style={{
-                  color: 'rgba(255,255,255,0.75)',
+                  color: '#fff',
                   fontSize: 15,
-                  fontWeight: 300,
+                  fontWeight: 350,
                   lineHeight: '25px',
                 }}
               >
                 If you are interested in advancing your career with Amo Farm
-                Sieberer Hatchery Ltd., please submit your CV and a cover letter
+                Sieberer Hatchery Ltd, please submit your CV and a cover letter
                 to our recruitment team. We look forward to welcoming you.
               </p>
             </div>
-            <a href="mailto:recruitment@rmandc.com" className="apply-email-btn">
+            <div className="apply-email-btn static">
               <i className="fa-solid fa-envelope"></i>
               recruitment@rmandc.com
-            </a>
+            </div>
           </div>
         </div>
       </section>

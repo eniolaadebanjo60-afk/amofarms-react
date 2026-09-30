@@ -188,40 +188,6 @@
   line-height: 25px;
 }
 
-.careers-page .talent-section {
-  background: var(--orange);
-  padding: 88px 0;
-}
-
-.careers-page .talent-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  justify-content: center;
-}
-
-.careers-page .talent-tag {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  background: rgba(255,255,255,0.15);
-  border: 1px solid rgba(255,255,255,0.3);
-  border-radius: 100px;
-  padding: 10px 22px;
-  font-size: 14px;
-  font-weight: 500;
-  color: #000;
-  transition: background 0.2s;
-}
-
-.careers-page .talent-tag:hover {
-  background: rgba(255,255,255,0.25);
-}
-
-.careers-page .talent-tag i {
-  font-size: 14px;
-}
-
 .careers-page .jobs-section {
   background: var(--white);
   padding: 88px 0;
@@ -480,6 +446,14 @@
 .careers-page .apply-email-btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 14px 36px rgba(0,0,0,0.2);
+}
+.careers-page .apply-email-btn.static {
+  cursor: default;
+}
+
+.careers-page .apply-email-btn.static:hover {
+  transform: none;
+  box-shadow: none;
 }
 
 @media (max-width: 960px) {
