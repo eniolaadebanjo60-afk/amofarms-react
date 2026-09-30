@@ -1,7 +1,7 @@
 .rd-page .page-hero {
   position: relative;
   height: 420px;
-  background: url('https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=1600&q=80') center / cover no-repeat;
+  background: url('../assets/research.jpg') center / cover no-repeat;
   display: flex;
   align-items: flex-end;
   padding: 0 80px 72px;

@@ -1,9 +1,12 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import hero1 from '../assets/hero1.jpg'
+import hero2 from '../assets/hero2.jpg'
+import hero3 from '../assets/hero3.jpg'
 
 const slides = [
   {
-    image: 'https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=1600&q=80',
+    image: hero1,
     tag: "Nigeria's #1 Hatchery",
     line1: 'Quality Chicks,',
     line2: 'Thriving Farms.',
@@ -12,7 +15,7 @@ const slides = [
     secondary: { label: 'Who We Are', to: '/about' },
   },
   {
-    image: 'https://images.unsplash.com/photo-1612170153139-6f881ff067e0?w=1600&q=80',
+    image: hero2,
     tag: 'Cutting-Edge Technology',
     line1: 'Innovation at',
     line2: 'Every Stage.',
@@ -21,7 +24,7 @@ const slides = [
     secondary: { label: 'Contact Us', to: '/contact' },
   },
   {
-    image: 'https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=1600&q=80',
+    image: hero3,
     tag: 'Expanding Across Africa',
     line1: 'Growing Together',
     line2: 'Across Africa.',

@@ -2,7 +2,17 @@ import { Link } from 'react-router-dom'
 import '../styles/home.css'
 import HeroSlider from '../components/HeroSlider'
 import Testimonials from '../components/Testimonials'
-import expo from '../assets/expo.jpg'
+import expo from '../assets/nipoli-expo.jpg'
+import gettingStarted from '../assets/getting-started.jpg'
+import feedCosts from '../assets/feed-costs.jpg'
+import pullets from '../assets/pullets.jpg'
+import noilers from '../assets/noilers.jpg'
+import cockerels from '../assets/cockerels.jpg'
+import broilers from '../assets/broilers.jpg'
+import homeAbout from '../assets/home-about.jpg'
+import research from '../assets/research.jpg'
+import team from '../assets/team.jpg'
+
 
 const stats = [
   { number: '2003', label: 'Established' },
@@ -37,22 +47,22 @@ const products = [
   {
     title: 'Day-Old Pullets',
     text: 'High-laying potential layer chicks for commercial egg production.',
-    image: 'https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=600&q=80',
+    image: pullets,
   },
   {
     title: 'Day-Old Noilers',
     text: 'Hardy dual-purpose breed for both egg and meat production.',
-    image: 'https://images.unsplash.com/photo-1612170153139-6f881ff067e0?w=600&q=80',
+    image: noilers,
   },
   {
     title: 'Day-Old Cockerels',
     text: 'Fast-growing cockerels ideal for the free-range meat market.',
-    image: 'https://images.unsplash.com/photo-1569880153113-76e33fc52d5f?w=600&q=80',
+    image: cockerels,
   },
   {
     title: 'Day-Old Broilers',
     text: 'High-performance broiler chicks for commercial meat farming.',
-    image: 'https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=600&q=80',
+    image: broilers,
   },
 ]
 
@@ -67,13 +77,13 @@ const posts = [
     date: 'April 2026',
     title: 'Getting Started in Poultry Farming',
     text: 'What every first-time farmer should know before investing in day-old chick production.',
-    image: 'https://images.unsplash.com/photo-1569880153113-76e33fc52d5f?w=600&q=80',
+    image: gettingStarted,
   },
   {
     date: 'March 2026',
     title: 'Maximise Profits Despite Rising Feed Costs',
     text: 'Practical strategies for Nigerian poultry farmers navigating a challenging economic climate.',
-    image: 'https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=600&q=80',
+    image: feedCosts,
   },
 ]
 
@@ -121,7 +131,7 @@ export default function Home() {
           <div className="about-inner">
             <div className="about-image-wrap">
               <img
-                src="https://images.unsplash.com/photo-1569880153113-76e33fc52d5f?w=800&q=80"
+                src={homeAbout}
                 alt="Day-old chick"
               />
               <div className="about-badge">
@@ -218,7 +228,7 @@ export default function Home() {
             </div>
             <div className="rd-image-wrap">
               <img
-                src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=800&q=80"
+                src={research}
                 alt="Research"
               />
             </div>
@@ -232,7 +242,7 @@ export default function Home() {
         <div className="section-inner">
           <div className="join-inner">
             <img
-              src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=800&q=80"
+              src={team}
               alt="AFSH Team"
               className="join-image"
             />

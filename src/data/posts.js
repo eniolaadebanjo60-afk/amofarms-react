@@ -1,12 +1,17 @@
 
-import farm from '../assets/farm.jpg'
-import broiler from '../assets/broiler.jpg'
+import nipoliExpo from '../assets/nipoli-expo.jpg'
+import gettingStarted from '../assets/getting-started.jpg'
+import feedCosts from '../assets/feed-costs.jpg'
+import whyNoiler from '../assets/why-noiler.jpg'
+import biosecurity from '../assets/biosecurity.jpg'
+import vaccination from '../assets/vaccination.jpg'
+import broilerFarming from '../assets/broiler-farming.jpg'
 
 const posts = [
   {
     id: 'nipoli-expo-2026',
     featured: true,
-    image: farm,
+    image: nipoliExpo,
     alt: 'NIPOLI EXPO',
     category: 'Events',
     date: 'May 12, 2026',
@@ -62,7 +67,7 @@ const posts = [
   },
   {
     id: 'getting-started',
-    image: 'https://images.unsplash.com/photo-1569880153113-76e33fc52d5f?w=1200&q=80',
+    image: gettingStarted,
     alt: 'Poultry Farming',
     category: 'Farming Tips',
     date: 'April 28, 2026',
@@ -81,7 +86,7 @@ const posts = [
   },
   {
     id: 'rising-feed-costs',
-    image: 'https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=1200&q=80',
+    image: feedCosts,
     alt: 'Feed Costs',
     category: 'Business',
     date: 'March 15, 2026',
@@ -100,7 +105,7 @@ const posts = [
   },
   {
     id: 'why-noiler',
-    image: 'https://images.unsplash.com/photo-1612170153139-6f881ff067e0?w=1200&q=80',
+    image: whyNoiler,
     alt: 'Noiler',
     category: 'Products',
     date: 'February 20, 2026',
@@ -119,7 +124,7 @@ const posts = [
   },
   {
     id: 'biosecurity-101',
-    image: 'https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=1200&q=80',
+    image: biosecurity,
     alt: 'Biosecurity',
     category: 'Health & Biosecurity',
     date: 'January 10, 2026',
@@ -138,7 +143,7 @@ const posts = [
   },
   {
     id: 'vaccination-schedules',
-    image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=1200&q=80',
+    image: vaccination,
     alt: 'Vaccination',
     category: 'Health & Biosecurity',
     date: 'December 5, 2025',
@@ -157,7 +162,7 @@ const posts = [
   },
   {
     id: 'broiler-farming',
-    image: broiler,
+    image: broilerFarming,
     alt: 'Broiler farming',
     category: 'Farming Tips',
     date: 'November 18, 2025',

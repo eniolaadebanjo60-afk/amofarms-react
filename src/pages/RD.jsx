@@ -1,6 +1,7 @@
 import { Fragment } from 'react'
 import { Link } from 'react-router-dom'
 import '../styles/rd.css'
+import whynoiler from '../assets/why-noiler.jpg'
 
 const stats = [
   { icon: 'fa-flask', number: '20+', label: 'Years of Research' },
@@ -140,7 +141,7 @@ export default function RD() {
           <div className="noiler-inner">
             <div className="noiler-image-wrap">
               <img
-                src="https://images.unsplash.com/photo-1612170153139-6f881ff067e0?w=800&q=80"
+                src={whynoiler}
                 alt="Noiler chickens"
               />
               <div className="noiler-badge">

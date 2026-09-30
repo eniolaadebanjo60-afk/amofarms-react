@@ -1,6 +1,11 @@
 import { useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import '../styles/products.css'
+import pullets from '../assets/pullets.jpg'
+import noilers from '../assets/noilers.jpg'
+import cockerels from '../assets/cockerels.jpg'
+import broilers from '../assets/broilers.jpg'
+import whyNoiler from '../assets/why-noiler.jpg'
 
 const introPoints = [
   {
@@ -26,7 +31,7 @@ const products = [
     number: '01',
     tag: 'Layer Chicks',
     title: 'Day-Old Pullets',
-    image: 'https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=800&q=80',
+    image: pullets,
     paragraphs: [
       'Our Day-Old Pullets are high-performance layer chicks bred for exceptional egg production. Sourced from premium genetic lines, these birds are known for their early maturity, consistent laying cycles, and strong feed-to-egg conversion ratios.',
       'Whether you are running a small backyard farm or a large commercial layer operation, our pullets give you the reliable foundation you need for a profitable poultry business.',
@@ -44,7 +49,7 @@ const products = [
     number: '02',
     tag: 'Dual-Purpose Breed',
     title: 'Day-Old Noilers',
-    image: 'https://images.unsplash.com/photo-1612170153139-6f881ff067e0?w=800&q=80',
+    image: noilers,
     reverse: true,
     paragraphs: [
       "The Noiler is Amo Farm's flagship innovation — a hardy dual-purpose breed developed specifically for the Nigerian and African market. Designed for both egg and meat production, Noilers bridge the gap between backyard and commercial farming.",
@@ -63,7 +68,7 @@ const products = [
     number: '03',
     tag: 'Free-Range Meat',
     title: 'Day-Old Cockerels',
-    image: 'https://images.unsplash.com/photo-1569880153113-76e33fc52d5f?w=800&q=80',
+    image: cockerels,
     paragraphs: [
       'Our Day-Old Cockerels are fast-growing birds ideal for the free-range and indigenous chicken meat market. Known for their robust build, rich flavour, and adaptability to semi-intensive systems, they are a top choice for farmers targeting the premium live-bird market.',
       'AFSH cockerels perform consistently well under Nigerian climate conditions, with strong immunity and a natural ability to forage — reducing overall feed costs for the farmer.',
@@ -81,7 +86,7 @@ const products = [
     number: '04',
     tag: 'Commercial Meat',
     title: 'Day-Old Broilers',
-    image: 'https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=800&q=80',
+    image: broilers,
     reverse: true,
     paragraphs: [
       'Our Day-Old Broilers are high-performance commercial meat birds bred for rapid growth, efficient feed conversion, and excellent carcass yield. Perfect for intensive broiler production systems, these birds are the go-to choice for commercial poultry farmers.',
@@ -228,7 +233,7 @@ export default function Products() {
             <div className="order-cta-text">
               <div
                 className="section-tag"
-                style={{ color: 'rgba(255,255,255,0.7)', borderColor: 'rgba(255,255,255,0.4)' }}
+                style={{ color: '#fff', borderColor: '#fff' }}
               >
                 Place an Order
               </div>
@@ -250,7 +255,7 @@ export default function Products() {
             </div>
             <div className="order-cta-image">
               <img
-                src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=800&q=80"
+                src={whyNoiler}
                 alt="Order chicks"
               />
             </div>

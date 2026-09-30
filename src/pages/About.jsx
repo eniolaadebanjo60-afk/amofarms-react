@@ -1,4 +1,5 @@
 import '../styles/about.css'
+import homeAbout from '../assets/home-about.jpg'
 
 const stats = [
   { number: '2003', label: 'Founded' },
@@ -112,7 +113,7 @@ export default function About() {
             </div>
             <div className="story-image-wrap">
               <img
-                src="https://images.unsplash.com/photo-1569880153113-76e33fc52d5f?w=800&q=80"
+                src={homeAbout}
                 alt="Amo Farm chick"
               />
               <div className="story-badge">

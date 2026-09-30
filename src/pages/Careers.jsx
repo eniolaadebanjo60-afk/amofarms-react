@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import '../styles/careers.css'
 import jobs from '../data/jobs'
+import whywork from '../assets/why-work.jpg'
+import team from '../assets/team.jpg'
 
 const whyPoints = [
   {
@@ -106,7 +108,7 @@ export default function Careers() {
 
             <div className="why-right">
               <img
-                src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=900&q=80"
+                src={whywork}
                 alt="AFSH team"
                 className="why-image"
               />
@@ -119,7 +121,7 @@ export default function Careers() {
         <div className="section-inner">
           <div className="join-inner">
             <img
-              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=900&q=80"
+              src={team}
               alt="Professional at AFSH"
               className="join-image"
             />
