@@ -81,7 +81,6 @@ export default function Home() {
   return (
     <div className="home-page">
       <HeroSlider />
-
       <div className="stats-strip fade-in">
         <div className="section-inner">
           <div className="stats-grid">

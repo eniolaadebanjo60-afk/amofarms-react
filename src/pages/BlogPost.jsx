@@ -1,39 +1,8 @@
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import '../styles/blog.css'
-
-const post = {
-  category: 'Events',
-  date: 'May 12, 2026',
-  read: '4 min read',
-  titleLine1: 'Amo Farm Sieberer Hatchery',
-  titleLine2: 'at NIPOLI EXPO 2026',
-  author: 'AFSH Editorial Team',
-  image: 'https://images.unsplash.com/photo-1585384090194-f7d42ccb2429?w=1200&q=80',
-  tags: ['Events', 'NIPOLI', 'Poultry', 'Nigeria'],
-}
+import posts from '../data/posts'
 
 const shareIcons = ['fa-facebook-f', 'fa-x-twitter', 'fa-linkedin-in', 'fa-whatsapp']
-
-const recentPosts = [
-  {
-    id: 'getting-started',
-    image: 'https://images.unsplash.com/photo-1569880153113-76e33fc52d5f?w=200&q=80',
-    title: 'Getting Started in Poultry Farming',
-    date: 'April 28, 2026',
-  },
-  {
-    id: 'rising-feed-costs',
-    image: 'https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=200&q=80',
-    title: 'Maximise Profits Despite Rising Feed Costs',
-    date: 'March 15, 2026',
-  },
-  {
-    id: 'why-noiler',
-    image: 'https://images.unsplash.com/photo-1612170153139-6f881ff067e0?w=200&q=80',
-    title: 'Why the Noiler is Best for Smallholder Farmers',
-    date: 'February 20, 2026',
-  },
-]
 
 const categories = [
   { name: 'Farming Tips', count: 4 },
@@ -43,40 +12,60 @@ const categories = [
   { name: 'Events', count: 1 },
 ]
 
-const relatedPosts = [
-  {
-    id: 'getting-started',
-    image: 'https://images.unsplash.com/photo-1569880153113-76e33fc52d5f?w=600&q=80',
-    category: 'Farming Tips',
-    date: 'April 28, 2026',
-    title: 'Getting Started in Poultry Farming',
-    excerpt:
-      'Everything you need to know before you invest in your first flock of day-old chicks.',
-  },
-  {
-    id: 'why-noiler',
-    image: 'https://images.unsplash.com/photo-1612170153139-6f881ff067e0?w=600&q=80',
-    category: 'Products',
-    date: 'February 20, 2026',
-    title: 'Why the Noiler is Best for Smallholder Farmers',
-    excerpt:
-      "The Noiler's dual-purpose nature makes it a game-changer for smallholder farmers.",
-  },
-  {
-    id: 'biosecurity-101',
-    image: 'https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=600&q=80',
-    category: 'Health & Biosecurity',
-    date: 'January 10, 2026',
-    title: 'Biosecurity 101: Protect Your Flock from Disease',
-    excerpt: 'A practical guide to setting up effective biosecurity on your poultry farm.',
-  },
-]
+function renderBlock(block, index) {
+  switch (block.type) {
+    case 'h2':
+      return <h2 key={index}>{block.text}</h2>
+    case 'quote':
+      return (
+        <blockquote key={index}>
+          &quot;{block.text}&quot;
+          — {block.cite}
+        </blockquote>
+      )
+    case 'list':
+      return (
+        <ul key={index}>
+          {block.items.map((item) => (
+            <li key={item}>{item}</li>
+          ))}
+        </ul>
+      )
+    default:
+      return <p key={index}>{block.text}</p>
+  }
+}
 
-export default function BlogPost() {
+export default function Blogpost() {
+  const { id } = useParams()
+  const post = posts.find((item) => item.id === id)
+
+  if (!post) {
+    return (
+      <div className="blog-page">
+        <div className="section-inner" style={{ padding: '120px 48px', textAlign: 'center' }}>
+          <h2 className="section-title">Article not found</h2>
+          <p className="section-sub" style={{ margin: '0 auto 28px' }}>
+            Sorry, we couldn't find the article you were looking for.
+          </p>
+          <Link to="/blog" className="btn-primary">
+            Back to Blog
+          </Link>
+        </div>
+      </div>
+    )
+  }
+
+  const otherPosts = posts.filter((item) => item.id !== post.id)
+  const recentPosts = otherPosts.slice(0, 3)
+  const relatedPosts = otherPosts.slice(3, 6)
+
   return (
     <div className="blog-page">
-      {/* POST HERO */}
-      <div className="post-hero">
+      <div
+        className="post-hero"
+        style={{ backgroundImage: `url('${post.image}')` }}
+      >
         <div className="post-hero-overlay"></div>
         <div className="section-inner">
           <div className="post-hero-content">
@@ -94,11 +83,7 @@ export default function BlogPost() {
                 <i className="fa-regular fa-clock"></i> {post.read}
               </span>
             </div>
-            <h1>
-              {post.titleLine1}
-              <br />
-              {post.titleLine2}
-            </h1>
+            <h1>{post.title}</h1>
             <div className="post-author">
               <div className="author-avatar-sm">AF</div>
               <span>
@@ -114,91 +99,10 @@ export default function BlogPost() {
           <div className="post-layout">
             <article className="post-content fade-in">
               <div className="post-featured-img">
-                <img src={post.image} alt={post.titleLine2} />
+                <img src={post.image} alt={post.alt} />
               </div>
 
-              <div className="post-body">
-                <p>
-                  This year's NIPOLI EXPO brought together Nigeria's leading
-                  names in poultry and livestock farming under one roof — and
-                  Amo Farm Sieberer Hatchery Ltd. (AFSH) was proud to be among
-                  them. Our team represented AFSH at this prestigious annual
-                  event, showcasing our products, sharing our expertise, and
-                  connecting with farmers, industry partners, and government
-                  stakeholders from across the country.
-                </p>
-
-                <h2>Why NIPOLI EXPO Matters</h2>
-                <p>
-                  The Nigeria Poultry and Livestock Exhibition (NIPOLI) is the
-                  nation's premier gathering for everyone in the agricultural
-                  value chain — from feed manufacturers and veterinary suppliers
-                  to commercial farmers and policy makers. For AFSH, it is a
-                  critical platform to demonstrate our commitment to advancing
-                  Nigeria's poultry industry and to hear directly from the
-                  farmers we serve.
-                </p>
-
-                <h2>What We Showcased</h2>
-                <p>
-                  At our booth, visitors had the opportunity to learn about our
-                  full range of day-old chick varieties — Pullets, Noilers,
-                  Cockerels, and Broilers — as well as our ongoing Research and
-                  Development work. Our team of agronomists and hatchery
-                  specialists were on hand to answer technical questions and
-                  offer practical advice on flock management, biosecurity, and
-                  feeding programmes.
-                </p>
-
-                <blockquote>
-                  &quot;The response from farmers at this year's expo was
-                  incredible. People are hungry for reliable, quality chicks and
-                  the kind of expert support AFSH provides. It reminded us why
-                  we do what we do.&quot;
-                  — AFSH Representative, NIPOLI EXPO 2026
-                </blockquote>
-
-                <h2>Key Highlights from the Event</h2>
-                <p>
-                  The three-day event was packed with panel discussions, product
-                  demonstrations, and networking sessions. Some of the key
-                  highlights for our team included:
-                </p>
-                <ul>
-                  <li>
-                    A live demonstration of our Noiler breed's performance data,
-                    comparing growth rates and egg production against
-                    conventional breeds
-                  </li>
-                  <li>
-                    A Q&amp;A session with smallholder farmers on best practices
-                    for raising Noilers in semi-intensive systems
-                  </li>
-                  <li>
-                    Meetings with potential distribution partners to expand our
-                    reach in the North-Central and North-West regions
-                  </li>
-                  <li>
-                    Recognition from the event organisers for AFSH's
-                    contribution to breed innovation in Nigeria
-                  </li>
-                </ul>
-
-                <h2>Looking Ahead</h2>
-                <p>
-                  Events like NIPOLI EXPO remind us that the future of Nigerian
-                  agriculture is bright — but it requires continued investment
-                  in quality genetics, farmer education, and industry
-                  collaboration. AFSH remains committed to being a driving force
-                  in that future.
-                </p>
-                <p>
-                  We look forward to returning next year with even more
-                  innovations to share. In the meantime, if you have questions
-                  about our products or want to place an order, our team is
-                  always ready to help.
-                </p>
-              </div>
+              <div className="post-body">{post.body.map(renderBlock)}</div>
 
               <div className="post-tags">
                 <span>Tags:</span>
@@ -231,7 +135,7 @@ export default function BlogPost() {
                 <div className="sidebar-posts">
                   {recentPosts.map((item) => (
                     <Link to={`/blog/${item.id}`} className="sidebar-post" key={item.id}>
-                      <img src={item.image} alt={item.title} />
+                      <img src={item.image} alt={item.alt} />
                       <div>
                         <p>{item.title}</p>
                         <span>{item.date}</span>
@@ -283,7 +187,7 @@ export default function BlogPost() {
             {relatedPosts.map((item) => (
               <Link to={`/blog/${item.id}`} className="blog-card" key={item.id}>
                 <div className="blog-card-img">
-                  <img src={item.image} alt={item.title} />
+                  <img src={item.image} alt={item.alt} />
                   <span className="card-category">{item.category}</span>
                 </div>
                 <div className="blog-card-body">

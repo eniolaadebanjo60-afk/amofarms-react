@@ -34,13 +34,10 @@ const slides = [
 export default function HeroSlider() {
   const [current, setCurrent] = useState(0)
 
-  // Go to a slide by number. The math makes it loop around at both ends.
   function goTo(index) {
     setCurrent((index + slides.length) % slides.length)
   }
 
-  // Auto-advance every 5 seconds. Whenever the slide changes (by timer,
-  // arrows or dots), this effect restarts, so the 5-second wait resets.
   useEffect(() => {
     const timer = setTimeout(() => {
       setCurrent((c) => (c + 1) % slides.length)
