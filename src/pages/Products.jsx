@@ -204,24 +204,9 @@ export default function Products() {
                 : 'product-section fade-in'
             }
           >
-            <div className="section-inner">
-              <div
-                className={
-                  product.reverse ? 'product-inner reverse' : 'product-inner'
-                }
-              >
-                {product.reverse ? (
-                  <>
-                    {text}
-                    {image}
-                  </>
-                ) : (
-                  <>
-                    {image}
-                    {text}
-                  </>
-                )}
-              </div>
+            <div className="product-inner">
+              {image}
+              {text}
             </div>
           </section>
         )
