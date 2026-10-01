@@ -204,9 +204,11 @@ export default function Products() {
                 : 'product-section fade-in'
             }
           >
-            <div className="product-inner">
-              {image}
-              {text}
+            <div className="section-inner">
+              <div className="product-inner">
+                {image}
+                {text}
+              </div>
             </div>
           </section>
         )
