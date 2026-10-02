@@ -1,7 +1,7 @@
 .rd-page .page-hero {
   position: relative;
   height: 420px;
-  background: url('../assets/research.jpg') center / cover no-repeat;
+  background: url('../assets/research.jpg') center 30% / cover no-repeat;
   display: flex;
   align-items: flex-end;
   padding: 0 80px 72px;

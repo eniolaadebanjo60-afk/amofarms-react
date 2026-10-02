@@ -14,13 +14,12 @@ const contactCards = [
     title: 'Email Us',
     text: "Send us a message and we'll get back to you within 24 hours.",
     linkText: 'info@afshltd.com',
-    href: 'mailto:info@afshltd.com',
     featured: true,
   },
   {
     icon: 'fa-solid fa-location-dot',
     title: 'Visit Us',
-    text: '133A & B Bashiru Shittu Street, Magodo Phase II, Lagos.',
+    text: '1 Amo Road, Awe, Oyo State, Nigeria.',
     linkText: 'Get Directions',
     href: 'https://maps.google.com',
     external: true,
@@ -30,7 +29,7 @@ const contactCards = [
     title: 'WhatsApp',
     text: 'Prefer to chat? Reach us directly on WhatsApp.',
     linkText: 'Chat With Us',
-    href: 'https://wa.me/2347006000600',
+    href: 'https://wa.me/2349058453476',
     external: true,
   },
 ]
@@ -88,13 +87,6 @@ export default function Contact() {
     event.preventDefault()
     const form = event.currentTarget
 
-    // ─────────────────────────────────────────────────────────────
-    // BACKEND GOES HERE (for the IT team):
-    // const data = Object.fromEntries(new FormData(form))
-    // -> data = { firstName, lastName, email, phone, subject, message }
-    // Send `data` to the server here, and only continue if it succeeds.
-    // ─────────────────────────────────────────────────────────────
-
     setSent(true)
     form.reset()
   }
@@ -149,7 +141,6 @@ export default function Contact() {
       <section className="contact-main fade-in">
         <div className="section-inner">
           <div className="contact-main-inner">
-            {/* FORM */}
             <div className="contact-form-wrap">
               <div className="section-tag">Send a Message</div>
               <h2 className="section-title">

@@ -1,7 +1,7 @@
 .about-page .page-hero {
   position: relative;
   height: 420px;
- background: url('../assets/about-hero.jpg') center / cover no-repeat;
+  background: url('../assets/noilers.jpg') center 30% / cover no-repeat;
   display: flex;
   align-items: flex-end;
   padding: 0 80px 72px;
@@ -178,14 +178,13 @@
   width: 52px;
   height: 52px;
   border-radius: 10px;
-  background: var(--orange-light);
+  background: #fff;
   color: var(--orange);
   font-size: 22px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
-  margin-left: 100px;
+  margin: 0 auto 20px;
 }
 
 .about-page .mv-card h3 {
@@ -393,9 +392,6 @@
 }
 .about-page .sister-logos {
   gap: 16px;
-}
-.about-page .mv-icon {
-  margin-left: 110px;
 }
 }
 

@@ -7,6 +7,7 @@ import hero3 from '../assets/hero3.jpg'
 const slides = [
   {
     image: hero1,
+    position: 'center 30%',
     tag: "Nigeria's #1 Hatchery",
     line1: 'Quality Chicks,',
     line2: 'Thriving Farms.',
@@ -16,6 +17,7 @@ const slides = [
   },
   {
     image: hero2,
+    position: 'center 15%',
     tag: 'Cutting-Edge Technology',
     line1: 'Innovation at',
     line2: 'Every Stage.',
@@ -25,6 +27,7 @@ const slides = [
   },
   {
     image: hero3,
+    position: 'center 20%',
     tag: 'Expanding Across Africa',
     line1: 'Growing Together',
     line2: 'Across Africa.',
@@ -55,7 +58,9 @@ export default function HeroSlider() {
           <div
             key={slide.tag}
             className={index === current ? 'hero-slide active' : 'hero-slide'}
-            style={{ backgroundImage: `url('${slide.image}')` }}
+            style={{ backgroundImage: `url('${slide.image}')`,
+              backgroundPosition: slide.position,
+            }}
           >
             <div className="hero-overlay"></div>
             <div className="hero-content">
