@@ -309,7 +309,7 @@ export default function Home() {
                 partner with us — our team is ready to help.
               </p>
             </div>
-            <Link to="/contact" className="btn-primary">
+            <Link to="/contact" className="btn-home">
               Contact Us &nbsp;<i className="fa-solid fa-arrow-right"></i>
             </Link>
           </div>
