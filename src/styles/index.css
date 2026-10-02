@@ -368,6 +368,7 @@ footer {
   text-align: center;
   font-size: 50px;
   margin-bottom: 20px;
+  color: var(--orange);
 }
 .sister-slider {
   position: relative;
