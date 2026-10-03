@@ -36,79 +36,66 @@ const slides = [
     secondary: { label: 'Join Our Team', to: '/careers' },
   },
 ]
-const extended = [...slides, slides[0]]
 
 export default function HeroSlider() {
-  const [current, setCurrent] = useState(0) 
-  const n = slides.length
-
-  function next() {
-    setCurrent((c) => c + 1)
-  }
-
-  function prev() {
-    setCurrent((c) => c - 1)
-  }
+  const [current, setCurrent] = useState(0)
 
   function goTo(index) {
-    const active = ((current % n) + n) % n
-    const diff = (index - active + n) % n
-    setCurrent(current + diff)
+    setCurrent((index + slides.length) % slides.length)
   }
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setCurrent((c) => c + 1)
+      setCurrent((c) => (c + 1) % slides.length)
     }, 5000)
     return () => clearTimeout(timer)
   }, [current])
 
-  const active = ((current % n) + n) % n
-
   return (
     <div className="hero-slider">
       <div className="hero-slides">
-        {slides.map((slide, index) => {
-          const offset = ((((index - current) % n) + n) % n + 1) % n - 1
-
-          return (
-            <div
-              key={slide.tag}
-              className="hero-slide"
-              style={{
-                backgroundImage: `url('${slide.image}')`,
-                backgroundPosition: slide.position,
-                transform: `translateX(${offset * 100}%)`,
-                transition: offset === 1 ? 'none' : 'transform 0.8s ease-in-out',
-              }}
-            >
-              <div className="hero-overlay"></div>
-              <div className="hero-content">
-                <div className="hero-tag">{slide.tag}</div>
-                <h1>
-                  {slide.line1}
-                  <br />
-                  <span>{slide.line2}</span>
-                </h1>
-                <p>{slide.text}</p>
-                <div className="hero-btns">
-                  <Link to={slide.primary.to} className="btn-primary">
-                    {slide.primary.label} &nbsp;<i className="fa-solid fa-arrow-right"></i>
-                  </Link>
-                  <Link to={slide.secondary.to} className="btn-outline">
-                    {slide.secondary.label}
-                  </Link>
-                </div>
+        {slides.map((slide, index) => (
+          <div
+            key={slide.tag}
+            className={index === current ? 'hero-slide active' : 'hero-slide'}
+            style={{ backgroundImage: `url('${slide.image}')`,
+              backgroundPosition: slide.position,
+            }}
+          >
+            <div className="hero-overlay"></div>
+            <div className="hero-content">
+              <div className="hero-tag">{slide.tag}</div>
+              <h1>
+                {slide.line1}
+                <br />
+                <span>{slide.line2}</span>
+              </h1>
+              <p>{slide.text}</p>
+              <div className="hero-btns">
+                <Link to={slide.primary.to} className="btn-primary">
+                  {slide.primary.label} &nbsp;<i className="fa-solid fa-arrow-right"></i>
+                </Link>
+                <Link to={slide.secondary.to} className="btn-outline">
+                  {slide.secondary.label}
+                </Link>
               </div>
             </div>
-          )
-        })}
+          </div>
+        ))}
       </div>
 
-      <button className="slider-btn slider-prev" aria-label="Previous slide" onClick={prev}>
+      <button
+        className="slider-btn slider-prev"
+        aria-label="Previous slide"
+        onClick={() => goTo(current - 1)}
+      >
         <i className="fa-solid fa-chevron-left"></i>
       </button>
-      <button className="slider-btn slider-next" aria-label="Next slide" onClick={next}>
+      <button
+        className="slider-btn slider-next"
+        aria-label="Next slide"
+        onClick={() => goTo(current + 1)}
+      >
         <i className="fa-solid fa-chevron-right"></i>
       </button>
 
@@ -116,7 +103,7 @@ export default function HeroSlider() {
         {slides.map((slide, index) => (
           <button
             key={slide.tag}
-            className={index === active ? 'slider-dot active' : 'slider-dot'}
+            className={index === current ? 'slider-dot active' : 'slider-dot'}
             aria-label={`Go to slide ${index + 1}`}
             onClick={() => goTo(index)}
           ></button>
