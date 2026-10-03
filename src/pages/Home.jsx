@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import CountUp from '../components/CountUp'
 import '../styles/home.css'
 import HeroSlider from '../components/HeroSlider'
 import Testimonials from '../components/Testimonials'
@@ -15,10 +16,10 @@ import team from '../assets/team.jpg'
 
 
 const stats = [
-  { number: '2003', label: 'Established' },
-  { number: '20+', label: 'Years of Excellence' },
-  { number: '4', label: 'Chick Varieties' },
-  { number: '3', label: 'Locations Nationwide' },
+  { end: 2003, suffix: '', label: 'Established' },
+  { end: 20, suffix: '+', label: 'Years of Excellence' },
+  { end: 4, suffix: '', label: 'Chick Varieties' },
+  { end: 3, suffix: '', label: 'Locations Nationwide' },
 ]
 
 const features = [
@@ -96,7 +97,7 @@ export default function Home() {
           <div className="stats-grid">
             {stats.map((stat) => (
               <div className="stat-item" key={stat.label}>
-                <div className="stat-number">{stat.number}</div>
+                <div className="stat-number"><CountUp end={stat.end} suffix={stat.suffix} /></div>
                 <div className="stat-label">{stat.label}</div>
               </div>
             ))}
