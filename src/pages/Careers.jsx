@@ -135,8 +135,8 @@ export default function Careers() {
                 thrive.
               </p>
               <p style={{ marginTop: 14 }}>
-                From hatchery operations to research, sales, and administration
-                — every role at AFSH contributes to a mission that feeds
+                From hatchery operations to research, sales, and administration,
+                every role at AFSH contributes to a mission that feeds
                 millions across Africa. We believe great teams are built on
                 trust, purpose, and a shared commitment to excellence.
               </p>
