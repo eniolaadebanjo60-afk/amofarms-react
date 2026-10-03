@@ -206,7 +206,7 @@ export default function Home() {
                 Advancing Poultry<br />Science in Africa
               </h2>
               <p style={{ color: '#fff', fontWeight: 500, fontSize: 15, lineHeight: '25px' }}>
-                At Amo Farm Sieberer Hatchery Ltd., innovation and excellence drive our Research and Development (R&D) 
+                At Amo Farm Sieberer Hatchery Ltd, innovation and excellence drive our Research and Development (R&D) 
                 efforts to advance poultry farming and meet evolving customer needs. 
                 A key milestone is the development of Noiler, a hardy, 
                 dual-purpose breed for both egg and meat production.

@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import '../styles/blog.css'
 import posts from '../data/posts'
@@ -7,9 +6,6 @@ const featuredPost = posts.find((post) => post.featured)
 const listPosts = posts.filter((post) => !post.featured)
 
 export default function Blog() {
-  const [page, setPage] = useState(1)
-  const totalPages = 3
-
   return (
     <div className="blog-page">
       <div className="page-hero">
@@ -91,24 +87,6 @@ export default function Blog() {
                 </div>
               </Link>
             ))}
-          </div>
-
-          <div className="pagination">
-            {[1, 2, 3].map((number) => (
-              <button
-                key={number}
-                className={page === number ? 'page-btn active' : 'page-btn'}
-                onClick={() => setPage(number)}
-              >
-                {number}
-              </button>
-            ))}
-            <button
-              className="page-btn page-next"
-              onClick={() => setPage(Math.min(page + 1, totalPages))}
-            >
-              Next <i className="fa-solid fa-arrow-right"></i>
-            </button>
           </div>
         </div>
       </section>
