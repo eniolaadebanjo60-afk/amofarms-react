@@ -3,9 +3,9 @@ import { Link, useLocation } from 'react-router-dom'
 import '../styles/products.css'
 import pullets from '../assets/pullets.jpg'
 import noilers from '../assets/noilers.jpg'
-import cockerels from '../assets/cockerels.jpg'
 import broilers from '../assets/broilers.jpg'
 import whyNoiler from '../assets/why-noiler.jpg'
+import hero1 from '../assets/hero1.jpg'
 
 const introPoints = [
   {
@@ -16,12 +16,12 @@ const introPoints = [
   {
     icon: 'fa-dna',
     title: 'Superior Genetics',
-    text: 'We source parent stock from world-class genetic suppliers to guarantee consistent performance across every flock.',
+    text: 'We own and manage our parent stock, carefully selecting only the highest-performing breeding birds to produce healthy, high-quality day-old chicks.',
   },
   {
     icon: 'fa-truck-fast',
     title: 'Nationwide Delivery',
-    text: 'With hatcheries in Oyo and Imo states, we ensure timely delivery of healthy chicks to farmers across Nigeria.',
+    text: 'With hatcheries in Oyo and Imo states, we ensure timely delivery of healthy chicks to farmers across Nigeria and even outside Nigeria.',
   },
 ]
 
@@ -33,15 +33,14 @@ const products = [
     title: 'Day-Old Pullets',
     image: pullets,
     paragraphs: [
-      'Our Day-Old Pullets are high-performance layer chicks bred for exceptional egg production. Sourced from premium genetic lines, these birds are known for their early maturity, consistent laying cycles, and strong feed-to-egg conversion ratios.',
-      'Whether you are running a small backyard farm or a large commercial layer operation, our pullets give you the reliable foundation you need for a profitable poultry business.',
+      'Amo Day-Old Chick Pullets Our pullets are bred from meticulously selected parent stock, which is reared in controlled cage environments from day one until culling. This method significantly reduces the risk of transmissible infections, ensuring the health and vitality of our pullets. Utilizing advanced Special Insemination Techniques, we guarantee the production of healthy, disease-free chicks that are primed for optimal growth and performance. Under Ideal Management system guarantees that:'
     ],
     features: [
-      'High egg production potential',
-      'Early sexual maturity',
-      'Excellent feed conversion',
-      'Strong disease resistance',
-      'Suitable for all farm sizes',
+      'Livability during rearing stage (0-17weeks) is 97%',
+      'Birds start dropping eggs at their 16th-18th week',
+      'Livability during laying stage (18-80week) is 94%',
+      'Peak production is above 90%',
+      'Hen-housed eggs per bird is 350 in 80 weeks',
     ],
   },
   {
@@ -52,8 +51,7 @@ const products = [
     image: noilers,
     reverse: true,
     paragraphs: [
-      "The Noiler is Amo Farm's flagship innovation — a hardy dual-purpose breed developed specifically for the Nigerian and African market. Designed for both egg and meat production, Noilers bridge the gap between backyard and commercial farming.",
-      'With superior adaptability to local conditions, strong disease resistance, and excellent growth rates, Noilers are the preferred choice for smallholder farmers looking to maximise income with minimal input costs.',
+      "Amo Day-Old Noilers Noiler was developed over several years through a pedigree breeding and selection program. Our Noilers are a unique breed offering a blend of characteristics from both broilers and layers. They are ideal for farmers looking for birds that can provide both meat and egg production. Noilers are developed to deliver balanced performance, with a focus on health and productivity",
     ],
     features: [
       'Dual-purpose: eggs and meat',
@@ -68,17 +66,13 @@ const products = [
     number: '03',
     tag: 'Free-Range Meat',
     title: 'Day-Old Cockerels',
-    image: cockerels,
+    image: hero1,
     paragraphs: [
-      'Our Day-Old Cockerels are fast-growing birds ideal for the free-range and indigenous chicken meat market. Known for their robust build, rich flavour, and adaptability to semi-intensive systems, they are a top choice for farmers targeting the premium live-bird market.',
-      'AFSH cockerels perform consistently well under Nigerian climate conditions, with strong immunity and a natural ability to forage — reducing overall feed costs for the farmer.',
+      'Amo day-old chick cockerels We provide high-quality cockerels that are bred for their superior genetic traits. These birds are ideal for those seeking strong, healthy males that can contribute to the next generation of poultry with enhanced performance and vitality. Under ideal management system guarantees:',
     ],
     features: [
       'Fast growth rate',
-      'Rich meat flavour',
-      'Strong foraging ability',
-      'Adapts to semi-intensive systems',
-      'High market demand',
+      'Average FCR of 1.69 to 1.70'
     ],
   },
   {
@@ -89,15 +83,14 @@ const products = [
     image: broilers,
     reverse: true,
     paragraphs: [
-      'Our Day-Old Broilers are high-performance commercial meat birds bred for rapid growth, efficient feed conversion, and excellent carcass yield. Perfect for intensive broiler production systems, these birds are the go-to choice for commercial poultry farmers.',
-      'AFSH broilers are vaccinated and prepared to the highest standards before leaving our hatchery, ensuring your birds arrive healthy, active, and ready to perform from day one.',
+      'Amo Day-Old Broilers Our broilers are known for their exceptional growth rates, making them an ideal choice for efficient poultry farming. Parent stock is carefully managed in cage systems from day one through to culling, which minimizes disease risk. The chicks are produced using aseptic Artificial Insemination techniques, ensuring they are robust and high-performing. Under ideal management/rearing system guarantees:'
     ],
     features: [
-      'Rapid weight gain',
-      'Excellent feed-to-meat conversion',
-      'High carcass yield',
-      'Vaccinated before dispatch',
-      'Ideal for intensive systems',
+      'Fast growth',
+      'Over 2kg body weight in 37 to 38 days under open system',
+      'Average Feed conversion ratio (FCR) of 1.69 to 1.70 implying 1kg flesh for every 1.69 to 1.70 feed taken',
+      'Livability of above 97% to 98% in 37 to 38 days',
+      'The average mortality up to 42 days is less than 3%',
     ],
   },
 ]
@@ -126,7 +119,7 @@ export default function Products() {
             Our <span>Products</span>
           </h1>
           <p style={{ color: '#fff', fontWeight: 500 }}>
-            From high-laying pullets to hardy dual-purpose Noilers — every chick
+            From high-laying pullets to hardy dual-purpose Noilers, every chick
             we produce is raised to give your farm the best possible start.
           </p>
         </div>
@@ -143,7 +136,7 @@ export default function Products() {
               <p style={{ color: '#000', fontWeight: 500 }}>
                 At Amo Farm Sieberer Hatchery, every day-old chick is the result
                 of precision genetics, strict biosecurity, and decades of
-                expertise. We don't just hatch chicks — we deliver the foundation
+                expertise. We don't just hatch chicks, we deliver the foundation
                 of a thriving poultry business.
               </p>
             </div>

@@ -242,7 +242,7 @@ footer {
   background: #fd8127;
   color: rgba(255,255,255,0.5);
   padding: 64px 0 32px;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .footer-inner {
@@ -259,7 +259,7 @@ footer {
 }
 
 .footer-brand p {
-  font-size: 13px;
+  font-size: 14px;
   color: #fff;
   line-height: 22px;
   margin-top: 14px;
@@ -275,7 +275,7 @@ footer {
 }
 
 .footer-logo-text small {
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 500;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -283,7 +283,7 @@ footer {
 }
 
 .footer-col h4 {
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 1.5px;
   text-transform: uppercase;
@@ -299,7 +299,7 @@ footer {
 }
 
 .footer-col ul li a {
-  font-size: 13px;
+  font-size: 14px;
   color: #fff;
   text-decoration: none;
   transition: color 0.2s;
@@ -311,7 +311,7 @@ footer {
 
 .footer-col address {
   font-style: normal;
-  font-size: 13px;
+  font-size: 14px;
   color: #fff;
   line-height: 22px;
 }
@@ -321,7 +321,7 @@ footer {
   color: #fff;
   margin-bottom: 4px;
   margin-top: 12px;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .footer-col address strong:first-child {
@@ -343,7 +343,7 @@ footer {
   align-items: center;
   justify-content: center;
   color: #fff;
-  font-size: 13px;
+  font-size: 14px;
   transition: background 0.2s, border-color 0.2s, color 0.2s;
 }
 
@@ -357,7 +357,7 @@ footer {
   border-top: 1px solid #fff;
   padding-top: 24px;
   text-align: center;
-  font-size: 12px;
+  font-size: 14px;
   color: #fff;
 }
 

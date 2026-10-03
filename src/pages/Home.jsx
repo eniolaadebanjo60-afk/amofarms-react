@@ -145,14 +145,14 @@ export default function Home() {
                 Quality You Can<br />Count On
               </h2>
               <p style={{ color: '#000', fontWeight: 500 }}>
-                At Amo Farm Sieberer Hatchery Ltd. (AFSH), we are committed to
-                delivering the highest quality Day-Old Chicks in the industry.
-                Since our inception in 2003, we have set the standard in poultry
-                farming by combining innovative production techniques with
-                state-of-the-art technology.
+                At Amo Farm Sieberer Hatchery Ltd. (AFSH), 
+                we are committed to delivering the highest quality Day-Old Chicks in the industry. 
+                Since our inception in 2003, 
+                we have set the standard in poultry farming by combining innovative production techniques
+                with state-of-the-art technology, ensuring superior quality and reliability for our customers.
               </p>
-              <p style={{ marginTop: 14, fontWeight: 500, color: '#000' }}>
-                We ensure superior quality and reliability for our customers —
+              <p style={{ marginTop: 9, fontWeight: 500, color: '#000' }}>
+                We ensure superior quality and reliability for our customers
                 farmers who trust us to give their flocks the best possible
                 start.
               </p>
@@ -205,8 +205,9 @@ export default function Home() {
                 Advancing Poultry<br />Science in Africa
               </h2>
               <p style={{ color: '#fff', fontWeight: 500, fontSize: 15, lineHeight: '25px' }}>
-                Innovation and excellence drive our R&amp;D efforts. A key
-                milestone is the development of the Noiler — a hardy,
+                At Amo Farm Sieberer Hatchery Ltd., innovation and excellence drive our Research and Development (R&D) 
+                efforts to advance poultry farming and meet evolving customer needs. 
+                A key milestone is the development of Noiler, a hardy, 
                 dual-purpose breed for both egg and meat production.
               </p>
               <p
@@ -218,9 +219,11 @@ export default function Home() {
                   marginTop: 14,
                 }}
               >
-                Noiler birds bridge the gap between backyard and commercial
-                farming, providing smallholder farmers with sustainable income
-                and improved nutrition.
+                Noiler birds bridge the gap between backyard and commercial farming, 
+                providing smallholder farmers with sustainable income, improved nutrition, 
+                and enhanced food security. 
+                Through continuous innovation, we remain committed to transforming the agricultural landscape 
+                with practical and impactful solutions.
               </p>
               <Link to="/rd" className="btn-white" style={{ marginTop: 28 }}>
                 Read More &nbsp;<i className="fa-solid fa-arrow-right"></i>
@@ -257,9 +260,9 @@ export default function Home() {
                 Join Our Team
               </h2>
               <p style={{ color: '#fff', fontSize: 15, fontWeight: 500, lineHeight: '25px' }}>
-                At Amo Farm, we regard our people as our greatest asset. We are
-                dedicated to fostering a safe, motivating, and innovative work
-                environment that helps our team thrive.
+                At Amo Farm, we regard our people as our greatest asset. 
+                We are dedicated to fostering a safe, motivating, 
+                and innovative work environment that helps our team thrive.
               </p>
               <Link to="/careers" className="btn-white" style={{ marginTop: 28 }}>
                 Discover More &nbsp;<i className="fa-solid fa-arrow-right"></i>

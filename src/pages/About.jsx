@@ -11,23 +11,23 @@ const mvCards = [
   {
     icon: 'fa-bullseye',
     title: 'Our Mission',
-    text: 'To consistently deliver the highest quality day-old chicks and poultry products, empowering farmers across Africa with the tools, knowledge, and support they need to build thriving, sustainable agricultural businesses.',
+    text: 'At Amo Farm Sieberer Hatchery Ltd, our primary goal is to provide the highest quality day-old chicks that set the foundation for your success. We are committed to producing and delivering chicks that are not only healthy but also exhibit exceptional growth potential and optimal feed conversion rates.',
   },
   {
     icon: 'fa-eye',
     title: 'Our Vision',
     featured: true,
-    text: "To be Africa's most trusted and innovative hatchery — transforming food security, rural livelihoods, and the agricultural landscape across the continent through world-class poultry science and production.",
+    text: "To be Africa's most trusted and innovative hatchery, transforming food security, rural livelihoods, and the agricultural landscape across the continent through world-class poultry science and production.",
   },
   {
     icon: 'fa-handshake',
     title: 'Our Promise',
-    text: 'Every chick we produce is a commitment — to quality, to the farmer, and to the communities that depend on healthy, affordable protein. We stand behind every flock, every time.',
+    text: 'Every chick we produce is a commitment to quality, to the farmer, and to the communities that depend on healthy, affordable protein. We stand behind every flock, every time.',
   },
 ]
 
 const values = [
-  { icon: 'fa-shield-halved', title: 'Integrity', text: 'We hold ourselves to the highest ethical standards — honest and transparent in everything we do.' },
+  { icon: 'fa-shield-halved', title: 'Integrity', text: 'We hold ourselves to the highest ethical standards, honest and transparent in everything we do.' },
   { icon: 'fa-star', title: 'Excellence', text: 'From chick quality to customer service, we set high standards and relentlessly work to exceed them.' },
   { icon: 'fa-lightbulb', title: 'Innovation', text: 'Creativity and forward-thinking drive us to deliver groundbreaking solutions in poultry farming.' },
   { icon: 'fa-circle-check', title: 'Accountability', text: 'We take ownership of our actions and commitments, always improving to achieve our goals.' },
@@ -73,9 +73,10 @@ export default function About() {
             <span>Can Trust</span>
           </h1>
           <p>
-            Established in 2003, Amo Farm Sieberer Hatchery Ltd. has built a
-            legacy of quality, innovation, and reliability in Nigeria's poultry
-            industry.
+           At Amo Farm Sieberer Hatchery Ltd. (AFSH), our commitment to excellence is at the core 
+           of everything we do. Since our inception in 2003, we have dedicated ourselves to producing 
+           Day-Old Chicks and Point of Cage Pullets that set the standard for quality in the poultry 
+           industry. 
           </p>
         </div>
       </div>
@@ -89,18 +90,19 @@ export default function About() {
                 Built on Quality,<br />Driven by Purpose
               </h2>
               <p>
-                At Amo Farm Sieberer Hatchery Ltd. (AFSH), we are committed to
-                delivering the highest quality Day-Old Chicks in the industry.
-                Since our inception in 2003, we have set the standard in poultry
-                farming by combining innovative production techniques with
-                state-of-the-art technology, ensuring superior quality and
-                reliability for our customers.
+                Welcome to Amo Farm, where excellence in poultry production is our hallmark. 
+                Established in 2003, our hatcheries have been at the forefront of delivering superior Day-Old Chicks 
+                and Point of Cage Pullets to meet the needs of farmers and poultry enthusiasts alike.
+                We are passionate about fostering the growth and health of your poultry from the very start. 
+                Our state-of-the-art facilities are equipped with cutting-edge technology and follow the highest standards of biosecurity and care. 
+                This ensures that every chick we produce is of the highest quality, ready to thrive and contribute to your farm’s success.
               </p>
               <p>
-                Over two decades, we have grown from a single hatchery to a
-                multi-location operation serving farmers across Nigeria and
-                beyond. Our relentless focus on biosecurity, genetics, and
-                customer support has made AFSH the name farmers trust most.
+                Amo Farm Sieberer Hatchery Ltd, founded in 2003, 
+                carries a legacy that traces back to 1960. Initially operating as Amo Farm Industries 
+                Ltd., the company underwent a significant transformation in 2003 under the leadership of a 
+                new management team, led by our Group Managing Director, Dr. Ayoola Oduntan. 
+                These changes have shaped the company into the innovative organization it is today.
               </p>
               <div className="story-stats">
                 {stats.map((stat) => (
@@ -157,7 +159,7 @@ export default function About() {
               className="section-sub"
               style={{ color: '#fff', fontWeight: 500, margin: '0 auto' }}
             >
-              These principles shape everything we do — from how we hatch our
+              These principles shape everything we do from how we hatch our
               chicks to how we serve our customers.
             </p>
           </div>

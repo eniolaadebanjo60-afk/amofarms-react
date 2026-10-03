@@ -5,7 +5,7 @@ import whynoiler from '../assets/why-noiler.jpg'
 
 const stats = [
   { icon: 'fa-flask', number: '20+', label: 'Years of Research' },
-  { icon: 'fa-dna', number: '4+', label: 'Breeds Developed', featured: true },
+  { icon: 'fa-dna', number: '1', label: 'Breed Developed', featured: true },
   { icon: 'fa-microscope', number: '100%', label: 'Biosecurity Compliance' },
 ]
 
@@ -13,30 +13,30 @@ const highlights = [
   'Dual-purpose: eggs and meat production',
   'Adapted to Nigerian climate and conditions',
   'Superior disease resistance',
-  'Excellent foraging ability — lowers feed costs',
+  'Excellent foraging ability (lowers feed costs)',
   'Ideal for smallholder and commercial farmers',
 ]
 
 const focusAreas = [
   {
     icon: 'fa-dna',
-    title: 'Genetics & Breeding',
-    text: 'We continuously evaluate and improve our parent stock genetics to enhance productivity, disease resistance, and adaptability to local conditions.',
+    title: 'Innovative Breeding Programs',
+    text: 'We invest in developing new and improved poultry breeds that offer greater efficiency, resilience, and productivity. Our breeding programs are designed to enhance genetic traits, ensuring that our chicks meet the highest standards for growth, egg production, and disease resistance.',
   },
   {
     icon: 'fa-shield-virus',
     title: 'Biosecurity & Disease Control',
-    text: 'Our biosecurity protocols are benchmarked against international standards, ensuring our hatcheries remain free from disease and our chicks are healthy at dispatch.',
+    text: 'At Amo Farm Sieberer Hatchery Ltd., the health and safety of our poultry are paramount. We adhere to the highest biosecurity standards to ensure that our facilities are secure and that our day-old chicks are delivered in optimal health. Our commitment to stringent biosecurity measures helps protect against disease outbreaks and maintains the integrity of our production process.',
   },
   {
-    icon: 'fa-egg',
-    title: 'Hatchery Technology',
-    text: 'We invest in state-of-the-art incubation and hatching technology, continuously optimising settings to improve hatch rates and chick quality.',
+    icon: 'fa-flask',
+    title: 'Advanced Production Techniques',
+    text: 'We explore and implement cutting-edge technologies in our production processes. This includes refining our artificial insemination techniques and optimizing rearing conditions to maximize the health and performance of our poultry.s',
   },
   {
     icon: 'fa-wheat-awn',
     title: 'Nutrition & Feed Science',
-    text: 'We research optimal feeding programmes for each breed at every growth stage — helping farmers maximise performance while minimising feed costs.',
+    text: 'Our R&D team is dedicated to improving poultry health through comprehensive research on nutrition, disease prevention, and vaccine efficacy. We continuously update our vaccination and feeding programs to ensure optimal growth and protection for our chicks.',
   },
   {
     icon: 'fa-temperature-half',
@@ -44,9 +44,9 @@ const focusAreas = [
     text: 'Our breeds are developed and tested to thrive in tropical climates, reducing mortality rates and improving productivity for farmers across Nigeria and Africa.',
   },
   {
-    icon: 'fa-chart-line',
-    title: 'Performance Monitoring',
-    text: 'We track field performance data from our farmer network to continuously improve our products and provide better technical support and advisory services.',
+    icon: 'fa-leaf',
+    title: 'Sustainability',
+    text: 'We are committed to advancing sustainable practices in poultry farming. Our research aims to reduce the environmental impact of poultry production, improve resource efficiency, and support the long-term viability of farming operations.',
   },
 ]
 
@@ -54,7 +54,7 @@ const steps = [
   {
     number: '01',
     title: 'Parent Stock Selection',
-    text: 'We source parent flocks from world-class genetic suppliers, selecting only the highest-performing breeding stock for our hatcheries.',
+    text: 'We own and manage our parent stock, carefully selecting only the highest performing breeding birds to produce healthy, high-quality day-old chicks.',
   },
   {
     number: '02',
@@ -69,7 +69,7 @@ const steps = [
   {
     number: '04',
     title: 'Hatching & Vaccination',
-    text: 'Chicks are hatched, processed, vaccinated, and quality-checked before being packed for delivery — ensuring every bird arrives healthy and active.',
+    text: 'Chicks are hatched, processed, vaccinated, and quality-checked before being packed for delivery, ensuring every bird arrives healthy and active.',
   },
 ]
 
@@ -90,7 +90,7 @@ export default function RD() {
             <span>Development</span>
           </h1>
           <p style={{ color: '#fff', fontWeight: 500 }}>
-            At AFSH, innovation is not an afterthought — it is the engine that
+            At AFSH, innovation is not an afterthought, it is the engine that
             drives everything we do. Our R&amp;D work is transforming poultry
             farming across Africa.
           </p>
@@ -106,15 +106,17 @@ export default function RD() {
                 Science-Driven,<br />Farmer-Focused
               </h2>
               <p style={{ color: '#000', fontWeight: 500 }}>
-                At Amo Farm Sieberer Hatchery Ltd., innovation and excellence
-                drive our Research and Development efforts to advance poultry
-                farming and meet evolving customer needs. We combine world-class
-                genetics, veterinary science, and practical field experience to
-                develop solutions that work for Nigerian and African farmers.
+                At Amo Farm Sieberer Hatchery Ltd., innovation and excellence drive our Research and Development (R&D) efforts to advance poultry farming and meet evolving customer needs. A key milestone is the development of Noiler, a hardy, dual-purpose breed for both egg and meat production.
+                Noiler birds bridge the gap between backyard and commercial farming, 
+                providing smallholder farmers with sustainable income, improved nutrition, 
+                and enhanced food security. Through continuous innovation,
+                we remain committed to transforming the agricultural landscape with practical and 
+                impactful solutions.
               </p>
+              <h4>Our R&D Philosophy</h4>
               <p style={{ marginTop: 14, color: '#000', fontWeight: 500 }}>
                 Our R&amp;D team works continuously to improve hatch rates, bird
-                performance, disease resistance, and feed efficiency — ensuring
+                performance, disease resistance, and feed efficiency, ensuring
                 that every chick we produce is better than the last.
               </p>
             </div>
@@ -153,11 +155,10 @@ export default function RD() {
               <div className="section-tag">Flagship Innovation</div>
               <h2 className="section-title">The Noiler Bird</h2>
               <p style={{ color: '#000', fontWeight: 500 }}>
-                A key milestone in AFSH's R&amp;D journey is the development of
-                the <strong>Noiler</strong> — a hardy, dual-purpose breed
-                designed specifically for the Nigerian and African market.
-                Noiler birds are bred to perform in both backyard and commercial
-                farming environments.
+                One of our most significant innovations is the Noiler Bird, 
+                a testament to our dedication to transforming rural poultry farming. 
+                Developed with a focus on addressing food security and economic challenges 
+                in rural Africa, the Noiler Bird represents a major breakthrough in poultry production.
               </p>
               <p style={{ marginTop: 14, color: '#000', fontWeight: 500 }}>
                 Noiler birds bridge the gap between backyard and commercial
@@ -192,7 +193,7 @@ export default function RD() {
             </h2>
             <p
               className="section-sub"
-              style={{ color: 'rgba(255,255,255,0.65)', margin: '0 auto' }}
+              style={{ color: '#fff', margin: '0 auto' }}
             >
               Every area of our research is driven by one goal — to give African
               farmers better birds and better outcomes.
