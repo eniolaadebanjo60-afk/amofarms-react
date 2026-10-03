@@ -16,10 +16,10 @@ import team from '../assets/team.jpg'
 
 
 const stats = [
-  { end: 2003, suffix: '', label: 'Established' },
-  { end: 20, suffix: '+', label: 'Years of Excellence' },
-  { end: 4, suffix: '', label: 'Chick Varieties' },
-  { end: 3, suffix: '', label: 'Locations Nationwide' },
+  { end: 2003, suffix: '', label: 'Established', loop: false },
+  { end: 20, suffix: '+', label: 'Years of Excellence', loop: true },
+  { end: 4, suffix: '', label: 'Chick Varieties', loop: true },
+  { end: 3, suffix: '', label: 'Locations Nationwide', loop: true },
 ]
 
 const features = [
@@ -97,7 +97,7 @@ export default function Home() {
           <div className="stats-grid">
             {stats.map((stat) => (
               <div className="stat-item" key={stat.label}>
-                <div className="stat-number"><CountUp end={stat.end} suffix={stat.suffix} /></div>
+                <div className="stat-number"><CountUp end={stat.end} suffix={stat.suffix} loop={stat.loop} /></div>
                 <div className="stat-label">{stat.label}</div>
               </div>
             ))}
